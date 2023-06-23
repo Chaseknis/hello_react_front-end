@@ -27,13 +27,7 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 
-- <a href="https://www.ruby-lang.org/es/">ROR</a>
-- <a href="https://www.postgresql.org/">Postgresql</a>
-- <a href="https://rspec.info/">Rspec</a>
-
-## 📹 Live Demo <a name="live-demo"></a>
-
-  [Live Link not available for now...]()
+- <a href="https://www.ruby-lang.org/es/">React</a>
 
 ## Link to the Back-end repository
 
@@ -41,7 +35,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- You can be able to access data in the api which are randomly displayed
+- You can be able to access data in the API which are randomly displayed
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -55,7 +49,6 @@ In order to run this project you need:
 
 - Command line or terminal
 - IDE such as VsCode.
-- Rails needs to be installed on your system.
 
 ### Setup
 
@@ -74,16 +67,16 @@ Example command:
 
 ```sh
   cd hello_react_front-end
-  bundle install (install all dependencies)
+  npm install (install all dependencies)
 
 ```
 
 ### Usage
 
-To run the project redirecting to the root directory of the project and run the following command:
+To run the project redirect to the root directory of the project and run the following command:
 
 ```sh
- bin/rails server (to run web application)
+ npm start (to run web application)
 
 ```
 
@@ -91,12 +84,8 @@ To run the project redirecting to the root directory of the project and run the 
 
 Run the following command:
 
-```sh
- rails s
-
-```
 and go to this link in your browser
-<http://localhost:3000/api/random>
+<http://localhost:3000/api/random_greeting)>
 
 ## 👥 Authors <a name="authors"></a>
 
