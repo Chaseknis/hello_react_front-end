@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  messages: [],
+  messages: '',
   status: 'idle',
   error: null,
 };
@@ -9,7 +9,7 @@ const initialState = {
 export const fetchGreetings = createAsyncThunk('messages/fetchGreetings', async () => {
   const res = await fetch('http://localhost:3000/api/random_greeting');
   const data = res.json();
-  return data.greeting;
+  return data;
 });
 
 const greetingsSlice = createSlice({
@@ -23,7 +23,7 @@ const greetingsSlice = createSlice({
       }))
       .addCase(fetchGreetings.fulfilled, (state, { payload }) => ({
         ...state,
-        messages: payload,
+        messages: payload.greeting,
         status: 'successful',
       }))
       .addCase(fetchGreetings.rejected, (state, { error }) => ({
